@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Duc V. Le</title>
+  <meta name="description" content="Duc V. Le — PhD candidate in economics and finance." />
+  <style>
+    :root{
+      --ink:#1a2230; --muted:#5b6678; --line:#e6e9ef;
+      --accent:#1f3b73; --bg:#fbfcfe; --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Charter,Georgia,serif;
+      color:var(--ink); background:var(--bg);
+      line-height:1.6; -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:720px; margin:0 auto; padding:72px 24px 48px}
+    header{display:flex; gap:28px; align-items:center; flex-wrap:wrap}
+    .photo{
+      width:128px; height:128px; border-radius:50%; object-fit:cover;
+      border:1px solid var(--line); background:#eef1f6; flex:0 0 auto;
+    }
+    h1{font-size:2.1rem; margin:0 0 4px; letter-spacing:-.01em; color:var(--accent)}
+    .role{color:var(--muted); font-size:1.05rem; margin:0}
+    .links{margin:14px 0 0; display:flex; flex-wrap:wrap; gap:10px}
+    .links a{
+      display:inline-block; padding:6px 13px; font-size:.92rem; text-decoration:none;
+      color:var(--accent); border:1px solid var(--line); border-radius:999px; background:var(--card);
+      transition:border-color .15s,background .15s;
+    }
+    .links a:hover{border-color:var(--accent); background:#f3f6fc}
+    main{margin-top:40px}
+    h2{font-size:1.1rem; letter-spacing:.02em; text-transform:uppercase; color:var(--muted);
+       border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 14px}
+    p{margin:0 0 14px}
+    .muted{color:var(--muted)}
+    footer{margin-top:48px; padding-top:18px; border-top:1px solid var(--line);
+            color:var(--muted); font-size:.85rem}
+    a.inline{color:var(--accent)}
+    @media (max-width:560px){ header{justify-content:center; text-align:center} .links{justify-content:center} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <!-- Replace with a photo: add a file (e.g. photo.jpg) and set src="photo.jpg" -->
+      <div class="photo" aria-hidden="true"></div>
+      <div>
+        <h1>Duc V. Le</h1>
+        <p class="role">PhD Candidate&nbsp;·&nbsp;Economics &amp; Finance</p>
+        <nav class="links">
+          <a href="#" rel="me">CV</a>
+          <a href="#" rel="me">Google&nbsp;Scholar</a>
+          <a href="#" rel="me">SSRN</a>
+          <a href="#" rel="me">ORCID</a>
+          <a href="#" rel="me">Email</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h2>About</h2>
+      <p>I am a PhD candidate working in economics and finance, with interests in
+         financial stability, asset pricing, and applied econometrics.
+         <span class="muted">(Placeholder — we'll refine this together.)</span></p>
+
+      <h2>Research</h2>
+      <p class="muted">Working papers and projects will be listed here.</p>
+
+      <h2>Contact</h2>
+      <p class="muted">Email and links above.</p>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Duc V. Le · Built with GitHub Pages.
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
