@@ -22,11 +22,11 @@
   <style>
     :root{
       --ink:#1a2230; --muted:#5b6678; --line:#e6e9ef;
-      --accent:#1f3b73; --bg:#fbfcfe; --card:#ffffff; --hover:#f3f6fc;
+      --accent:#1f3b73; --bg:#fbfcfe; --card:#ffffff; --hover:#f3f6fc; --code:#eceef3;
     }
     html[data-theme="dark"]{
       --ink:#e7eaf0; --muted:#9aa6b8; --line:#2a3140;
-      --accent:#8ab0ec; --bg:#0f1216; --card:#171b22; --hover:#222a37;
+      --accent:#8ab0ec; --bg:#0f1216; --card:#171b22; --hover:#222a37; --code:#2a313d;
     }
     *{box-sizing:border-box}
     html,body{margin:0}
@@ -67,7 +67,7 @@
     .pub{margin:0 0 16px}
     .works{margin:2px 0 16px; padding-left:1.15em}
     .works li{margin:0 0 6px}
-    code{font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.9em}
+    code{font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.85em; background:var(--code); padding:.12em .42em; border-radius:5px}
     .abs{margin:8px 0 0}
     .abs summary{cursor:pointer; color:var(--accent); font-size:.9rem; font-weight:600}
     .abs > div{margin:8px 0 0; color:var(--muted); font-size:.95rem; line-height:1.55}
@@ -141,28 +141,20 @@
       </p>
 
       <h2>Code &amp; Resources</h2>
-      <p class="pub"><strong>&ldquo;Stata for Empirical Economics: A Reproducible Methods Portfolio&rdquo;</strong></p>
+      <p class="pub">
+        <strong>&ldquo;Stata for Empirical Economics: A Reproducible Methods Portfolio.&rdquo;</strong>
+        A two-book set with twelve documented <code>.do</code> scripts spanning difference-in-differences,
+        instrumental variables, regression discontinuity, synthetic control, and dynamic-panel GMM.
+        <a class="inline" href="https://github.com/duc-v-le/stata-empirical-methods">GitHub</a> &middot;
+        <a class="inline" href="https://doi.org/10.5281/zenodo.20952641">DOI</a>
+      </p>
       <ul class="works">
-        <li>Includes a two-book set featuring a documented twelve-script <code>.do</code> suite.</li>
-        <li>Covers difference-in-differences, instrumental variables, regression discontinuity,
-          synthetic control, and dynamic-panel GMM.</li>
-        <li><span class="semi">Stata&nbsp;code:</span>
-          <a class="inline" href="https://github.com/duc-v-le/stata-empirical-methods">GitHub&nbsp;repository</a> &middot;
-          <a class="inline" href="https://doi.org/10.5281/zenodo.20952641">DOI</a></li>
-        <li><span class="semi">eBook&nbsp;1</span> (<em>A Stata Reference for Empirical Economics: Methods, Code, and Verified Results</em>) &middot;
+        <li><em>A Stata Reference for Empirical Economics: Methods, Code, and Verified Results</em> &middot;
           <a class="inline" href="https://doi.org/10.5281/zenodo.20950265">DOI</a> &middot;
           <a class="inline" href="https://github.com/duc-v-le/stata-empirical-methods/blob/main/books/Stata-Reference.pdf">PDF</a></li>
-        <li><span class="semi">eBook&nbsp;2</span> (<em>Stata Line-by-Line: An Empirical Economics Guide</em>) &middot;
+        <li><em>Stata Line-by-Line: An Empirical Economics Guide</em> &middot;
           <a class="inline" href="https://doi.org/10.5281/zenodo.20951436">DOI</a> &middot;
           <a class="inline" href="https://github.com/duc-v-le/stata-empirical-methods/blob/main/books/Stata-Guide.pdf">PDF</a></li>
-      </ul>
-
-      <h2>Repositories</h2>
-      <ul class="works">
-        <li><a class="inline" href="https://github.com/duc-v-le/dealer-gamma-volatility">dealer-gamma-volatility</a>
-          &mdash; replication code for the dealer-gamma working paper (Python: WRDS data pulls, IV/2SLS, panel FE, HAC).</li>
-        <li><a class="inline" href="https://github.com/duc-v-le/stata-empirical-methods">stata-empirical-methods</a>
-          &mdash; the Stata methods portfolio: two books and twelve documented <code>.do</code> scripts.</li>
       </ul>
 
       <h2>Contact</h2>
