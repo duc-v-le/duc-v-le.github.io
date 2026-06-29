@@ -65,6 +65,8 @@
        border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 14px}
     h3{font-size:1.02rem; font-weight:600; color:var(--ink); margin:20px 0 8px}
     .pub{margin:0 0 5px}
+    .paperlist{margin:2px 0 16px; padding-left:1.5em}
+    .paperlist > li{margin:0 0 4px; padding-left:.2em}
     .works{margin:2px 0 16px; padding-left:1.15em}
     .works li{margin:0 0 6px}
     .codes{margin:2px 0 16px; padding-left:1.4em}
@@ -110,7 +112,8 @@
 
       <h2>Research</h2>
       <h3>Publications</h3>
-      <p class="pub">
+      <ol class="paperlist">
+        <li class="pub">
         &ldquo;Globalization, economic growth, and innovation: A two-country two-period model.&rdquo;
         Cuong Le Van, <strong>Duc V. Le</strong>, and Thanh Tam Nguyen-Huu.<br />
         <span class="muted"><em>International Economics</em> 187 (2026), 100725.</span>
@@ -127,10 +130,12 @@
   year    = {2026},
   doi     = {10.1016/j.inteco.2026.100725}
 }</pre></div></details>
-      </p>
+        </li>
+      </ol>
 
       <h3>Working papers</h3>
-      <p class="pub">
+      <ol class="paperlist">
+        <li class="pub">
         &ldquo;Does Dealer Gamma Move Volatility? Causal Evidence from the Option-Expiration Roll-off.&rdquo;
         <span class="muted">Working paper, 2026.</span>
         <a class="inline" href="https://github.com/duc-v-le/dealer-gamma-volatility">Code</a> &middot;
@@ -142,12 +147,10 @@
   year   = {2026},
   note   = {Working paper}
 }</pre></div></details>
-      </p>
-
-      <p class="pub">
+        </li>
+        <li class="pub">
         &ldquo;Do Short-Dated Call Options Predict Stock-Price Crashes?&rdquo;
-        Dan Cao and <strong>Duc V. Le</strong>.
-        <span class="muted">Working paper, 2026.</span>
+        <span class="muted">(with Dan Cao). Working paper, 2026.</span>
         <details class="abs"><summary>Abstract</summary><div>We show that short-dated retail call-option activity predicts subsequent stock-price crashes, whereas long-dated call activity predicts the opposite. In a panel of 3,447 U.S. firms from 1996 to 2021, stocks in the top quintile of short-dated retail call share have a 24-month-forward crash probability 25.5 percentage points higher than those in the bottom quintile; for long-dated calls the spread reverses to &minus;4.7 points, so a high long-dated share is associated with lower crash risk. To rationalize this maturity asymmetry, we develop a heterogeneous-belief model with demand-pressure dealers. A wealth-share amplification channel generates the pattern: as optimistic retail investors accumulate wealth, their demand bids up the underlying through the dealer&rsquo;s hedging costs, leaving prices elevated and prone to mean-reverting crashes. The model reproduces the empirical magnitude, implying a +28.6-point quintile spread against +25.5 in the data. Mediation tests attribute roughly 30% of the predictive power to this retail-ownership channel, with the remainder reflecting a separate institutional informed-trading channel concentrated in large-cap stocks.</div></details>
         <details class="abs bib"><summary>BibTeX</summary><div><pre>@unpublished{caole2026shortdated,
   title  = {Do Short-Dated Call Options Predict Stock-Price Crashes?},
@@ -155,7 +158,8 @@
   year   = {2026},
   note   = {Working paper}
 }</pre></div></details>
-      </p>
+        </li>
+      </ol>
 
       <h2>Code &amp; Resources</h2>
       <ol class="codes">
